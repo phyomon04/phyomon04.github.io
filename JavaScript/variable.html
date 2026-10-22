@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //variable
+        var a = 13; //Global variable
+        console.log(a);
+        document.write("<h1>" + a + "</h1>");
+
+        let b = 23; //Block scope variable
+        document.write("<h1>" + b + "</h1>");
+
+        const c = 33; //Constant Variable
+        document.write("<h1>" + c + "</h1>");
+
+        a = 103;
+        console.log(a);
+
+        b = 203;
+        console.log(b);
+
+        //c = 303; cannot change because c value is constant
+
+        var a = 130;
+        console.log(a);
+
+        //  let b = 230;
+
+        //  const c = 330;
+
+        if (a = 130) {
+            var num1 = 12;
+            let num2 = 13;
+            const num3 = 14;
+        }
+
+        console.log(num1);  //not working cause outside of { }
+        // console.log(num2);
+        console.log(num3);
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
