@@ -174,7 +174,7 @@ body {
 
 .item-img {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
 .menu-content {
@@ -201,136 +201,137 @@ body {
 
 /* Menu Hero */
 .menu-hero {
-    background-image: url("../images/hero-menu.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 70px;
-    color: #F7F4EA;
+  background-image: url("../images/hero-menu.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 70px;
+  color: #e3ded4;
 }
 
 .menu-hero p:first-child {
-    color: #E81B22;
-    letter-spacing: 3px;
-    font-size: 14px;
+  color: #e81b22;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .menu-hero h1 {
-    font-size: 3rem;
-    margin: 10px 0;
+  font-size: 3rem;
+  margin: 10px 0;
+  /* font-weight: bold; */
 }
 
 .menu-hero .hero-detail {
-    max-width: 500px;
-    line-height: 1.8;
+  max-width: 500px;
+  line-height: 1.8;
 }
 
 /* Menu Category Links */
 .menu-categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 30px 20px;
-    background-color: #F7F4EA;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 30px 20px;
+  background-color: #f7f4ea;
 }
 
 .menu-categories a {
-    text-decoration: none;
-    color: #111111;
-    border: 1px solid #c9c2b5;
-    border-radius: 25px;
-    padding: 12px 22px;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #111111;
+  border: 1px solid #c9c2b5;
+  border-radius: 25px;
+  padding: 12px 22px;
+  transition: 0.3s;
 }
 
 .menu-categories a:hover {
-    background-color: #E81B22;
-    color: #ffffff;
-    border-color: #E81B22;
+  background-color: #e81b22;
+  color: #ffffff;
+  border-color: #e81b22;
 }
 
 /* Menu Sections */
 .menu-section {
-    padding: 40px 50px;
-    background-color: #F7F4EA;
-    scroll-margin-top: 20px;
+  padding: 40px 50px;
+  background-color: #f7f4ea;
+  scroll-margin-top: 20px;
 }
 
 #sushi {
-    background-color: #F7F4EA;
+  background-color: #f7f4ea;
 }
 
 #sashimi {
-    background-color: #f0eadb;
+  background-color: #f0eadb;
 }
 
 #hot-dishes {
-    background-color: #F7F4EA;
+  background-color: #f7f4ea;
 }
 
 #drinks {
-    background-color: #f0eadb;
+  background-color: #f0eadb;
 }
 
 .menu-heading {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .menu-heading h2 {
-    font-size: 2rem;
-    color: #111111;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  color: #111111;
+  margin-bottom: 10px;
 }
 
 .menu-heading h2::before {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 4px;
-    background-color: #E81B22;
-    margin-bottom: 12px;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #e81b22;
+  margin-bottom: 12px;
 }
 
 .menu-heading p {
-    color: #343434;
-    line-height: 1.6;
+  color: #343434;
+  line-height: 1.6;
 }
 
 /* Food Cards */
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .menu-card {
-    min-width: 0;
-    color: #111111;
+  min-width: 0;
+  color: #111111;
 }
 
 .menu-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    border-radius: 8px;
-    margin-bottom: 12px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 
 .menu-card h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 .menu-card p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
 .menu-card .price {
-    color: #E81B22;
-    font-weight: bold;
+  color: #e81b22;
+  font-weight: bold;
 }
 
 /* About */
@@ -428,12 +429,11 @@ body {
   border-radius: 10px;
 }
 
-
 /* Gallery */
 
 .gallery-hero {
   min-height: 350px;
- background-image: url("../images/hero-img.jpg");
+  background-image: url("../images/hero-img.jpg");
   background-size: cover;
   background-position: center;
 
@@ -467,7 +467,6 @@ body {
   line-height: 1.8;
 }
 
-
 .gallery-intro {
   text-align: center;
   padding: 60px 20px 30px;
@@ -491,7 +490,7 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 30px 50px 70px;
   background-color: #f7f4ea;
@@ -588,61 +587,6 @@ body {
   background-color: #b8141a;
 }
 
-
-
-/* Footer */
-.footer {
-  background-color: #111111;
-  text-align: center;
-  color: #ffffff;
-  padding: 25px 20px 0;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding-bottom: 20px;
-}
-
-.footer-brand h1 {
-  color: #e81b22;
-  padding-bottom: 15px;
-}
-
-.footer-brand h2 {
-  padding-bottom: 15px;
-}
-
-.quick-link ul li {
-  list-style: none;
-  line-height: 1.8;
-}
-
-.quick-link ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.footer-content {
-  line-height: 1.8;
-}
-
-.phone2 a {
-  text-decoration: none;
-  color: #111111;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding: 15px 0;
-  text-align: center;
-  border-top: 1px solid #555555;
-}
-
 /* contact hero */
 .contact-hero {
   position: relative;
@@ -712,6 +656,11 @@ body {
   margin-right: 20px;
 }
 
+.phone3 a {
+  color: black;
+  text-decoration: none;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -731,4 +680,57 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   color: #111111;
+}
+
+/* Footer */
+.footer {
+  background-color: #111111;
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 20px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-brand h1 {
+  color: #e81b22;
+  padding-bottom: 15px;
+}
+
+.footer-brand h2 {
+  padding-bottom: 15px;
+}
+
+.quick-link ul li {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.quick-link ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-content {
+  line-height: 1.8;
+}
+
+.phone2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #555555;
 }
