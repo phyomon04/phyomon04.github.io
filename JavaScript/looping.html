@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+    <script>
+        //Looping
+
+        // For Loop
+        for (let i = 1; i <= 5 ; i++) {
+            document.write('<h3>Hello JS</h3>')
+        }
+
+        let laptops = ['Apple', 'Dell', 'Asus', 'Lenovo', 'HP', 'Acer'];
+        let lapNumber = laptops.length;
+        console.log(lapNumber);
+        console.log(laptops[2]);
+
+        for (let j = 0; j < lapNumber; j++){
+            document.write(`<h3>Laptop brand is ${laptops[j]}</h3>`);
+        }
+        
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+
+        for(let m = 0; m < 5 ; m++) {
+            for (let n = 0; n < 5; n++) {
+                document.write('*');
+            }
+            document.write('</br>')
+        }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+        for (let g = 0; g < 5; g++) {
+            for (let h = 0; h <= g ; h++) {
+                document.write('*');
+            }
+            document.write('</br>')
+        }
+
+        let number = prompt('Enter a number');
+        console.log(number);
+
+        for (let n = 1; n <= 12; n++) {
+            document.write(`<h3> ${number} x ${n} = ${number * n}</h3>`)
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
