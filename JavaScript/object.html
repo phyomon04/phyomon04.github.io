@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Object
+
+        // Nameless Function 
+        let name = function() {
+
+        }
+        name();
+
+        let hotel = {
+            name: 'XYZ hotel',
+            rooms: 40,
+            booked: 25,
+            gym: true,
+            roomTypes: ['twin','double','suite'],
+            checkAvaliable: function() {
+                let roomFree = this.rooms - this.booked;
+                return roomFree;
+            }
+        }
+
+        console.log(hotel);
+
+        let hotelName = hotel.name;
+        document.write(`<h3>Hotel name is ${hotelName}</h3>`);
+        let roomLists = hotel.roomTypes;
+        console.log(roomLists);
+        for (let i = 0; i < roomLists.length; i++) {
+            document.write(`<ul><li> ${roomLists[i]}</li></ul>`)
+        }
+        
+        console.log(hotel.checkAvaliable);
+
+        hotel.pool =false ;
+        console.log(hotel);
+
+        delete hotel.gym;
+        console.log(hotel);
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function
+
+        function funName() {
+            document.write(`<h3>Hello Function</h3>`);
+        }
+        funName(); //have to recall fun-name
+
+        function add(num1, num2) {
+            let result = num1 + num2;
+            document.write(`<h3>The result is ${result}</h3>`)
+        }
+        add(23, 32);
+
+        //default function
+        function sub(num1 = 50, num2 = 30) {
+            let result = num1 - num2;
+            document.write(`<h3>The result is ${result}</h3>`)
+        }
+        sub(); //dont call argument, the default no will work
+        sub(100,20);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">DOM <em>Lesson</em></h1>
+    <h3 id="lang">Languages</h3>
+    <p class="language">HTML</p>
+    <p class="language">CSS</p>
+    <p class="language">JavaScript</p>
+    <p class="language">Tailwind CSS</p>
+    <p id="add-text"></p>
+    <p id="add-html"></p>
+    <button onclick="addNew()">Add</button>
+
+    <script>
+        let heading = document.getElementById('heading');
+        console.log(heading);
+        let text = heading.innerText;
+        console.log(text);
+        let html = heading.innerHTML;
+        console.log(html);
+
+        function addNew() {
+            document.getElementById('add-text').innerText = '<i>This is innerText</i>';
+            document.getElementById('add-html').innerHTML = '<i>This is innerHTML</i>';
+        }
+
+        let classLanguage = document.getElementsByClassName('language');
+        console.log(classLanguage);
+        console.log(classLanguage[2]);
+
+        let tagName = document.getElementsByTagName('p');
+        console.log(tagName);
+
+        let idQuery = document.querySelector('#lang');
+        console.log(idQuery);
+
+        let classQuery = document.querySelector('.language');
+        console.log(classQuery);
+
+        let classQueryAll = document.querySelectorAll('.language');
+        console.log(classQueryAll);
+
+        let tagQuery = document.querySelectorAll('p');
+        console.log(tagQuery);
+
+        let tagQueryAll = document.querySelectorAll('p');
+        console.log(tagQueryAll);
+     
+    </script>
+</body>
+</html>
