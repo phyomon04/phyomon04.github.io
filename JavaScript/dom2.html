@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="one">One</li>
+        <li id="two">Two</li>
+        <li id="three">Three</li>
+    </ul>
+
+    <script>
+        let startTag = document.querySelector('ul');
+        console.log(startTag);
+
+        let first_child = startTag.firstChild;
+        console.log(first_child);
+        let first_elementChild = startTag.firstElementChild;
+        console.log(first_elementChild);
+
+        let last_child = startTag.lastChild;
+        console.log(last_child);
+        let last_elementChild = startTag.lastElementChild;
+        console.log(last_elementChild);
+
+        let next_elementSibling = first_elementChild.nextElementSibling;
+        console.log(next_elementSibling);
+
+        let previous_elementSibling = last_elementChild.previousElementSibling;
+        console.log(previous_elementSibling);
+    </script>
+</body>
+</html>

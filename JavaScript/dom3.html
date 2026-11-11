@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeColor()"> Create Text, Elements And Attributes Nodes</h1>
+    <p id="text-node"></p>
+    <button onclick="create_TextNode()">Create Text Node</button>
+    <br><br>
+    <button onclick="create_ElementNode()">Create Element Node</button>
+    <br><br>
+
+    <input type="text" name="" id="name">
+    <button onclick="adding()">Add</button>
+    <ul>
+        <li>Aung Aung</li>
+    </ul>
+
+    <script>
+        function create_TextNode() {
+            let text_node = document.querySelector('text-node');
+            let text = document.createTextNode("Hello JavaScript");
+            console.log(text); 
+        }
+
+        function create_ElementNode() {
+            let h3 = document.createElement('h3');
+            console.log(h3);
+            h3.innerText = "Create h3 element";
+            console.log(h3);
+
+            document.body.appendChild(h3);   
+        }
+
+        function adding() {
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let li = document.createElement('li');
+            li.innerText = name;
+            console.log(li);
+            document.querySelector('ul').appendChild(li);  
+        }
+
+        function changeColor() {
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+
+            if (attr) {
+                heading.removeAttribute('style');
+            }else {
+                heading.setAttribute('style', 'color:red;');
+            }     
+        }
+    </script>
+</body>
+</html>
