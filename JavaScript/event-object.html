@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Event Object</h1>
+
+    <h2>Mouse Click</h2>
+    <div id="parent">
+        <p>Parent Element</p>
+        <button id="btnOne">Button One</button>
+        <button id="btnTwo">Button Two</button>
+
+    </div>
+
+    <h2>KeyBoard Event</h2>
+    <input type="text" id="username">
+
+    <div id="result">Waiting for event</div>
+
+    <script>
+        let parent = document.querySelector('#parent');
+        let username = document.querySelector('#username');
+        let result = document.querySelector('#result');
+
+        parent.addEventListener('click' , function(event) {
+            console.log(event);
+            console.log(event.type);
+            console.log(event.target.id);
+            console.log(event.currentTarget);  
+
+            result.textContent = "Mouse Event Information: Event Type:" + event.type + "- Target Element:" + event.target.id + "- Current Element: " + event.currentTarget.id;
+
+        })
+
+        username.addEventListener('keydown' , function(event) {
+            console.log(event);
+            console.log(event.code);
+            
+            console.log(event.type);
+            console.log(event.target.id);
+            console.log(event.currentTarget);  
+        })
+
+
+
+    </script>
+</body>
+</html>

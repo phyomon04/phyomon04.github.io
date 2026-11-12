@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>addEventListner</h1>
+    <button id="btn">Click Me</button>
+    <p id="message">Waiting for Click... <span style="display: none;">Hello</span></p>
+
+    <script>
+        //syntax
+        // element.addEventListener(event, function)
+
+        let btn = document.querySelector('#btn');
+
+        let message = document.querySelector('#message');
+
+        console.log("innerText :", message.innerText);
+        console.log("textContent :", message.textContent);
+        
+
+        btn.addEventListener('click', function() {
+            message.textContent = "Hello HeinLearn.";
+        })
+    </script>
+</body>
+</html>
